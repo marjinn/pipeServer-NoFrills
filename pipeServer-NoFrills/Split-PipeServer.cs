@@ -123,9 +123,10 @@ namespace pipeServer_NoFrills
             client.stream = new FileStream(client.handle, FileAccess.ReadWrite, BUFFER_SIZE, true);
             byte[] buffer = new byte[BUFFER_SIZE];
             ASCIIEncoding encoder = new ASCIIEncoding();
-
+            SendMessage("this.tbSend.Text");
             while (true)
             {
+                SendMessage("this.tbSend.Text");
                 int bytesRead = 0;
 
                 try
